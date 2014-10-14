@@ -25,10 +25,26 @@ class ViewController: UIViewController
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func passbookAvailable()->Bool
+    {
+        if (PKPassLibrary.isPassLibraryAvailable())
+        {
+            return true
+        }
+        else
+        {
+            var alert = UIAlertController(title: "Passbook", message: "Passbook is not available on this device.", preferredStyle: UIAlertControllerStyle.Alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler:  nil))
+            self.presentViewController(alert, animated: true, completion: nil)
+            
+            return false
+        }
+    }
 
     @IBAction func showPassbookPass(AnyObject)
     {
-        if (PKPassLibrary.isPassLibraryAvailable())
+        if (passbookAvailable())
         {
             let path = NSBundle.mainBundle().pathForResource("pass900452108", ofType: "pkpass")
             let data = NSData(contentsOfFile: path!)
@@ -37,7 +53,9 @@ class ViewController: UIViewController
             {
                 var viewTmp = PKAddPassesViewController(pass: pass)
                 self.presentViewController(viewTmp, animated: true, completion: nil)
-            }else{
+            }
+            else
+            {
                 var alert = UIAlertController(title: "Passbook", message: "This pass already in your Passbook.", preferredStyle: UIAlertControllerStyle.Alert)
                 alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler:  nil))
                 alert.addAction(UIAlertAction(title: "Remove Pass", style: UIAlertActionStyle.Default, handler:  { action in
@@ -49,17 +67,13 @@ class ViewController: UIViewController
                 }))
                 self.presentViewController(alert, animated: true, completion: nil)
             }
-        }else{
-            var alert = UIAlertController(title: "Passbook", message: "Passbook is not available on this device.", preferredStyle: UIAlertControllerStyle.Alert)
-            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler:  nil))
-            self.presentViewController(alert, animated: true, completion: nil)
         }
     }
     
     @IBAction func isPassAlreadyInPassbook()
     {
         var alertString = "Pass not found in your Passbook."
-        if (PKPassLibrary.isPassLibraryAvailable())
+        if (passbookAvailable())
         {
             let path = NSBundle.mainBundle().pathForResource("pass900452108", ofType: "pkpass")
             let data = NSData(contentsOfFile: path!)

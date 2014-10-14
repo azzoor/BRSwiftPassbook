@@ -14,7 +14,7 @@
 		5458072219C326B3001C1E21 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5458072019C326B3001C1E21 /* LaunchScreen.xib */; };
 		5458072E19C326B3001C1E21 /* BRSwiftPassbookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5458072D19C326B3001C1E21 /* BRSwiftPassbookTests.swift */; };
 		5458073819C32707001C1E21 /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5458073719C32707001C1E21 /* PassKit.framework */; };
-		5458074519C45E9C001C1E21 /* pass900452108.pkpass in Resources */ = {isa = PBXBuildFile; fileRef = 5458074419C45E9C001C1E21 /* pass900452108.pkpass */; };
+		5474D04819ED07CB00A4A59D /* pass900452108.pkpass in Resources */ = {isa = PBXBuildFile; fileRef = 5474D04719ED07CB00A4A59D /* pass900452108.pkpass */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +40,7 @@
 		5458072D19C326B3001C1E21 /* BRSwiftPassbookTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BRSwiftPassbookTests.swift; sourceTree = "<group>"; };
 		5458073719C32707001C1E21 /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = System/Library/Frameworks/PassKit.framework; sourceTree = SDKROOT; };
 		5458073919C32707001C1E21 /* BRSwiftPassbook.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = BRSwiftPassbook.entitlements; sourceTree = "<group>"; };
-		5458074419C45E9C001C1E21 /* pass900452108.pkpass */ = {isa = PBXFileReference; lastKnownFileType = file; path = pass900452108.pkpass; sourceTree = "<group>"; };
+		5474D04719ED07CB00A4A59D /* pass900452108.pkpass */ = {isa = PBXFileReference; lastKnownFileType = file; path = pass900452108.pkpass; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,8 +88,8 @@
 				5458071719C326B3001C1E21 /* AppDelegate.swift */,
 				5458071919C326B3001C1E21 /* ViewController.swift */,
 				5458071B19C326B3001C1E21 /* Main.storyboard */,
+				5474D04719ED07CB00A4A59D /* pass900452108.pkpass */,
 				5458071E19C326B3001C1E21 /* Images.xcassets */,
-				5458074419C45E9C001C1E21 /* pass900452108.pkpass */,
 				5458072019C326B3001C1E21 /* LaunchScreen.xib */,
 				5458071519C326B3001C1E21 /* Supporting Files */,
 			);
@@ -207,10 +207,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5474D04819ED07CB00A4A59D /* pass900452108.pkpass in Resources */,
 				5458071D19C326B3001C1E21 /* Main.storyboard in Resources */,
 				5458072219C326B3001C1E21 /* LaunchScreen.xib in Resources */,
 				5458071F19C326B3001C1E21 /* Images.xcassets in Resources */,
-				5458074519C45E9C001C1E21 /* pass900452108.pkpass in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,6 +423,7 @@
 				5458073319C326B3001C1E21 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5458073419C326B3001C1E21 /* Build configuration list for PBXNativeTarget "BRSwiftPassbookTests" */ = {
 			isa = XCConfigurationList;
@@ -431,6 +432,7 @@
 				5458073619C326B3001C1E21 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
