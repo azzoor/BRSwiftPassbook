@@ -15,6 +15,7 @@
 		5458072E19C326B3001C1E21 /* BRSwiftPassbookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5458072D19C326B3001C1E21 /* BRSwiftPassbookTests.swift */; };
 		5458073819C32707001C1E21 /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5458073719C32707001C1E21 /* PassKit.framework */; };
 		5474D04819ED07CB00A4A59D /* pass900452108.pkpass in Resources */ = {isa = PBXBuildFile; fileRef = 5474D04719ED07CB00A4A59D /* pass900452108.pkpass */; };
+		5474D04A19ED09C100A4A59D /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 5474D04919ED09C100A4A59D /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		5458073719C32707001C1E21 /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = System/Library/Frameworks/PassKit.framework; sourceTree = SDKROOT; };
 		5458073919C32707001C1E21 /* BRSwiftPassbook.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = BRSwiftPassbook.entitlements; sourceTree = "<group>"; };
 		5474D04719ED07CB00A4A59D /* pass900452108.pkpass */ = {isa = PBXFileReference; lastKnownFileType = file; path = pass900452108.pkpass; sourceTree = "<group>"; };
+		5474D04919ED09C100A4A59D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 				5458071B19C326B3001C1E21 /* Main.storyboard */,
 				5474D04719ED07CB00A4A59D /* pass900452108.pkpass */,
 				5458071E19C326B3001C1E21 /* Images.xcassets */,
+				5474D04919ED09C100A4A59D /* README.md */,
 				5458072019C326B3001C1E21 /* LaunchScreen.xib */,
 				5458071519C326B3001C1E21 /* Supporting Files */,
 			);
@@ -228,6 +231,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5474D04A19ED09C100A4A59D /* README.md in Sources */,
 				5458071A19C326B3001C1E21 /* ViewController.swift in Sources */,
 				5458071819C326B3001C1E21 /* AppDelegate.swift in Sources */,
 			);
