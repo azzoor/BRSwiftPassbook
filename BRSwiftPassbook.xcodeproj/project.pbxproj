@@ -41,7 +41,6 @@
 		5458073719C32707001C1E21 /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = System/Library/Frameworks/PassKit.framework; sourceTree = SDKROOT; };
 		5458073919C32707001C1E21 /* BRSwiftPassbook.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = BRSwiftPassbook.entitlements; sourceTree = "<group>"; };
 		5474D04719ED07CB00A4A59D /* pass900452108.pkpass */ = {isa = PBXFileReference; lastKnownFileType = file; path = pass900452108.pkpass; sourceTree = "<group>"; };
-		5474D04B19ED0C2900A4A59D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +91,6 @@
 				5474D04719ED07CB00A4A59D /* pass900452108.pkpass */,
 				5458071E19C326B3001C1E21 /* Images.xcassets */,
 				5458072019C326B3001C1E21 /* LaunchScreen.xib */,
-				5474D04B19ED0C2900A4A59D /* README.md */,
 				5458071519C326B3001C1E21 /* Supporting Files */,
 			);
 			path = BRSwiftPassbook;
